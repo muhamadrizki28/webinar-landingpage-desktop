@@ -1,0 +1,104 @@
+.scroll-downn {
+  position: relative;
+}
+.scroll-icons {
+  position: absolute;
+  left: 25rem;
+  bottom: -14rem;
+  font-size: 6rem;
+  animation: gerak 2s ease-in-out infinite;
+}
+.scroll-iconss {
+  position: relative;
+  left: 0rem;
+  top: 5rem;
+  font-size: 6rem;
+  animation: gerak 2s ease-in-out infinite;
+}
+@keyframes gerak {
+  0% {
+    bottom: -13rem;
+  }
+  50% {
+    bottom: -16rem;
+    filter: invert(1.8);
+  }
+  100% {
+    bottom: -13rem;
+  }
+}
+.gamesss {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 120vh;
+}
+.gamesss .text-games {
+  color: #fff;
+  background-color: black;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 50px;
+  box-shadow: 0 10px 40px black;
+}
+.gamesss .text-games-animate {
+  animation: text-games 1s ease-in-out infinite;
+}
+@keyframes text-games {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#sambutan p:nth-child(4) {
+  background-color: purple;
+  width: fit-content;
+  font-size: 0.8rem;
+  padding: 10px;
+  border-radius: 20%;
+  right: 5rem;
+  position: absolute;
+}
+
+/* CountDown */
+#timer {
+  display: flex;
+  flex-direction: column;
+  margin-top: -11rem;
+  margin-right: 5rem;
+  font-size: 4rem;
+  font-weight: 300;
+  color: white;
+  text-shadow: 0 0 20px #48c8ff;
+}
+
+#timer div {
+  display: inline-block;
+  min-width: 90px;
+}
+
+#timer div span {
+  color: #b1cdf1;
+  display: block;
+  font-size: 0.35em;
+  font-weight: 400;
+}
+.ubahbulan:hover::before {
+  content: 'Senin';
+  padding-right: 5px;
+}
+.ubahbulan:hover:after {
+  content: '2021';
+  padding-left: 5px;
+}
+.ubahbulan::after,
+.ubahbulan::before {
+  transition: 0.5s;
+}
